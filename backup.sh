@@ -120,7 +120,7 @@ calculate_md5() {
     return 0
 }
 
-# Get file modification date in YYYY-mm-dd format
+# Get file modification date in YYYY-mm-dd_HH-MM-SS format
 get_mod_date() {
     local file="$1"
     local date
