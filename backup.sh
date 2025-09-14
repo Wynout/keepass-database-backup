@@ -14,8 +14,8 @@ SCRIPT_NAME="$(basename "$0")"
 KEEPASS_DATABASES=(
     # Example entries - replace with your actual database paths
     "./example-keepass-bob.kbdx"                      # Bob's database
-    "./example-keepass-john.kbdx"                     # John's database
-    "./example-keepass-juliet.kbdx"                   # Juliet's database
+    "./example-keepass-kevin.kbdx"                    # Kevin's database
+    "./example-keepass-stuart.kbdx"                   # Stuart's database
     # "/home/user/documents/keepass-personal.kbdx"    # Personal database
     # "/home/user/dropbox/keepass-work.kbdx"          # Work database
     # "/media/external/keepass-backup.kbdx"           # External drive
@@ -125,7 +125,7 @@ get_mod_date() {
     local file="$1"
     local date
 
-    if ! date=$(stat -c %y "$file" 2>/dev/null | cut -d' ' -f1); then
+    if ! date=$(date -r "$file" +"%Y-%m-%d_%H-%M-%S" 2>/dev/null); then
         log_error "Failed to get modification date for: $file"
         return 1
     fi

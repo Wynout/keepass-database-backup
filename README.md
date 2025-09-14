@@ -77,9 +77,9 @@ export BACKUP_DIR="/mnt/external-drive/keepass-backups"
 
 ## Backup Format
 
-Backups are saved as: `YYYY-mm-dd_keepass-{name}_md5hash.kbdx`
+Backups are saved as: `YYYY-mm-dd_HH-MM-SS_keepass-{name}_md5hash.kbdx`
 
-Example: `2025-09-09_keepass-personal_a1b2c3d4e5f6.kbdx`
+Example: `2025-09-09_14-30-45_keepass-personal_a1b2c3d4e5f6.kbdx`
 
 ## Automation on Arch Linux
 
@@ -163,8 +163,8 @@ $ ./backup.sh
 [INFO] Using backup directory: /home/user/Documents/KeePass-Backups
 [INFO] Backup directory ready: /home/user/Documents/KeePass-Backups
 [INFO] Processing 2 configured databases
-[INFO] Creating backup: 2025-09-09_keepass-personal_a1b2c3d4.kbdx
-[INFO] Backup already exists: 2025-09-09_keepass-work_f7g8h9i0.kbdx
+[INFO] Creating backup: 2025-09-09_14-30-45_keepass-personal_a1b2c3d4e5f6.kbdx
+[INFO] Backup already exists: 2025-09-09_13-37-00_keepass-work_f7g8h9i0.kbdx
 [INFO] Processed 2 configured databases
 [INFO] Backup process completed
 [INFO] Processed: 2, Successful: 2, Failed: 0
